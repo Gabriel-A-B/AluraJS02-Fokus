@@ -37,6 +37,9 @@ const contagemRegresiva = () => {
        startOuPauseBt.textContent = "Começar"
        imageStartOuPause.setAttribute('src', '/imagens/play_arrow.png')
         temporizador = 5
+        const focoAtivo = html.getAttribute('data-contexto') == 'foco'
+        const evento = new CustomEvent('focoFinalizado')
+        document.dispatchEvent(evento)
         return
     }
     temporizador -= 1
@@ -46,6 +49,7 @@ const contagemRegresiva = () => {
 playTime.addEventListener('click', iniciarOuPausar)
 
 function iniciarOuPausar() {
+    debugger
     if(intervaloId) {
         interromper()
         return
