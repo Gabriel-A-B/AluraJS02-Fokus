@@ -49,7 +49,6 @@ const contagemRegresiva = () => {
 playTime.addEventListener('click', iniciarOuPausar)
 
 function iniciarOuPausar() {
-    debugger
     if(intervaloId) {
         interromper()
         return
