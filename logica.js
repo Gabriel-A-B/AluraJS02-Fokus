@@ -8,10 +8,10 @@ const titulo = document.querySelector('.app__title')
 const botoes = document.querySelectorAll('.app__card-button')
 
 const playAudio = document.querySelector('#alternar-musica')
-const musica = new Audio('/sons/luna-rise-part-one.mp3')
-const pauseAudio = new Audio('/sons/pause.mp3')
-const startAudio = new Audio('/sons/play.wav')
-const beepAudio = new Audio('/sons/beep.mp3')
+const musica = new Audio('sons/luna-rise-part-one.mp3')
+const pauseAudio = new Audio('sons/pause.mp3')
+const startAudio = new Audio('sons/play.wav')
+const beepAudio = new Audio('sons/beep.mp3')
 const playTime = document.querySelector('#start-pause')
 const startOuPauseBt = document.querySelector('#start-pause span')
 const imageStartOuPause = document.querySelector('.app__card-primary-butto-icon')
@@ -35,7 +35,7 @@ const contagemRegresiva = () => {
         interromper()
        beepAudio.play()
        startOuPauseBt.textContent = "Começar"
-       imageStartOuPause.setAttribute('src', '/imagens/play_arrow.png')
+       imageStartOuPause.setAttribute('src', 'imagens/play_arrow.png')
         temporizador = 5
         const focoAtivo = html.getAttribute('data-contexto') == 'foco'
         const evento = new CustomEvent('focoFinalizado')
@@ -49,6 +49,7 @@ const contagemRegresiva = () => {
 playTime.addEventListener('click', iniciarOuPausar)
 
 function iniciarOuPausar() {
+    debugger
     if(intervaloId) {
         interromper()
         return

@@ -51,7 +51,7 @@ function criarElementoTarefa(tarefa) {
         }
     }
 
-    imagemBotao.setAttribute('src', '/imagens/edit.png')
+    imagemBotao.setAttribute('src', 'imagens/edit.png')
     botao.append(imagemBotao)
 
     li.append(svg)
