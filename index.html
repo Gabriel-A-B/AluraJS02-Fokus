@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./styles.css">
     <script src="logica.js" defer></script>
     <script src="tarefas.js" defer></script>
+    <script src="logicaRotina.js" defer></script>
 </head>
 
 <body>
@@ -122,6 +123,55 @@
                 <button class="app__button--add-task">
                     <img src="/imagens/add_circle.png" alt=""> Adicionar nova tarefa
                 </button>
+            </div>
+
+            <h1 class="app__card-rotina-title">Tarefa Diaria</h1>
+            <div class="app__card-rotina">
+                <div class="app__card-rotina-list">
+                </div>
+            </div>
+
+            <div class="app__rotina">
+                <h1 class="app__rotina--title">Sua rotina de estudos</h1>
+                <table class="app__rotina--table">
+                    <thead class="app__rotina--table-header">
+                        <tr class="app__rotina--table-header-row">
+                            <th class="app__rotina--table-header-days">Segunda-feira</th>
+                            <th class="app__rotina--table-header-days">Terça-feira</th>
+                            <th class="app__rotina--table-header-days">Quarta-feira</th>
+                            <th class="app__rotina--table-header-days">Quinta-feira</th>
+                            <th class="app__rotina--table-header-days">Sexta-feira</th>
+                            <th class="app__rotina--table-header-days">Sabado</th>
+                            <th class="app__rotina--table-header-days">Domingo</th>
+                        </tr>
+                    </thead>
+                    <tbody class="app__rotina--table-body">
+                        <tr class="app__rotina--table-body-row">
+                            <td class="app__rotina--table-body-studies">
+                                <input required rows="1" class="app__rotina-textarea"></input>
+                            </td>
+                            <td class="app__rotina--table-body-studies">
+                                <input required rows="1" class="app__rotina-textarea"></input>
+                            </td>
+                            <td class="app__rotina--table-body-studies">
+                                <input required rows="1" class="app__rotina-textarea"></input>
+                            </td>
+                            <td class="app__rotina--table-body-studies">
+                                <input required rows="1" class="app__rotina-textarea"></input>
+                            </td>
+                            <td class="app__rotina--table-body-studies">
+                                <input required rows="1" class="app__rotina-textarea"></input>
+                            </td>
+                            <td class="app__rotina--table-body-studies">
+                                <input required rows="1" class="app__rotina-textarea"></input>
+                            </td>
+                            <td class="app__rotina--table-body-studies">
+                                <input required rows="1" class="app__rotina-textarea"></input>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="app__rotina--table-buttom app__rotina--table-save" onclick="salvarRotina()">Salvar</button>
             </div>
         </section>
 

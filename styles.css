@@ -273,6 +273,71 @@ h1, h2, h3, h4, h5, h6 {
     gap: 0.8rem;
 }
 
+.app__card-rotina-title {
+    color: var(--color-secondary);
+    font-size: 2rem;
+    margin: 20px 0px;
+}
+
+.app__card-rotina {
+    width: 95%;
+    border: 1px var(--color-secondary) solid;
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+    padding: 15px 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.app__card-rotina-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.app__card-rotina-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.app__rotina {
+    width: 95%;
+    overflow-x: auto;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    padding: 5px 5px;
+    margin: 15px 0px;
+    font-size: 1.45rem;
+}
+
+.app__rotina--title{
+    padding-bottom: 1.5em;
+}
+
+.app__rotina--table{
+    margin: auto;
+    margin-bottom: 1.5em;
+}
+
+.app__rotina--table-buttom{
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    background-color: transparent;
+    gap: 1rem;
+    padding: 15px;
+    color: var(--lils);
+    border-radius: 3.2rem;
+    border: 0.2rem solid var(--lils);
+    width: 10em;
+}
+
+.app__rotina--table-buttom:hover {
+    transition: 1s;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
 /* fim - dropdown */
 
 

@@ -92,7 +92,7 @@ btnAdicionarTarefa.addEventListener('click', () => {
 
 btnTextAreaDeleted.addEventListener('click', () => {
     caixaDeTexto.value = '';
-    
+
 })
 
 btnCancelar.addEventListener('click', () => {
